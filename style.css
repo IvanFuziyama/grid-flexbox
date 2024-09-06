@@ -1,0 +1,53 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2em;
+}
+h1{
+    text-align: center;
+    margin: 30px 0;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+header{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+header a{
+    text-decoration: none;
+    color: white;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav li{
+    padding: 10px;
+    margin-left: 10px;
+}
+
+/* CSS FlexBox 1*/
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.flex div{
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+
+
