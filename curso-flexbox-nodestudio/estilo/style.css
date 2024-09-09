@@ -13,11 +13,21 @@ section.container{
     background-color: rgb(197, 197, 197);
     height: 200px;
     justify-content: center;
+    flex-flow: row wrap;
 }
 article.c1,
 article.c2,
 article.c3{
     padding: 10px;
+    height: 30px;
     background-color: rgb(95, 95, 95);
     margin: 5px;
+    
+    /* flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 300px; */
+
+    /* shorthand */
+    /* flex-grow flex-shirink flex-basis */
+    flex: 1 1 300px;
 }
