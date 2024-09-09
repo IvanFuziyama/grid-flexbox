@@ -10,10 +10,14 @@ body{
 }
 section.container{
     display: flex;
+    flex-flow: row wrap;
     background-color: rgb(197, 197, 197);
     height: 200px;
+    max-width: 1000px;
     justify-content: center;
-    flex-flow: row wrap;
+    align-items: center;
+    margin: auto;
+    
 }
 article.c1,
 article.c2,
@@ -22,12 +26,12 @@ article.c3{
     height: 30px;
     background-color: rgb(95, 95, 95);
     margin: 5px;
-    
+
     /* flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 300px; */
 
     /* shorthand */
     /* flex-grow flex-shirink flex-basis */
-    flex: 1 1 300px;
+    flex: 1 1 200px;
 }
