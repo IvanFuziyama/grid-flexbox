@@ -3,16 +3,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 body{
-    background-color: tomato;
+    background-color: #9B8496;
     height: 100vh;
-
 }
 header#cabecalho{
-    background-color: white;
+    background-color: #9B8496;
     display: flex;
     justify-content: space-between;
     align-items: center; 
@@ -20,7 +19,7 @@ header#cabecalho{
 }
 header a{
     text-decoration: none;
-    color: black;
+    color: white;
     cursor: pointer;
     padding: 10px;
 }
@@ -28,19 +27,95 @@ ul#itens{
     display: flex;
     list-style: none;
 }
-li{
-    padding: 20px;
-    margin-left: 10px;
-}
+li{padding: 10px 0 10px 0;}
 li a:hover{
     background-color: whitesmoke;
     transition: 0.6s;
     border-radius: 10px;
+    color: black;
 }
 img{
     width: 32px;
 }
+
+section#inicio{
+    background: url(../img/praia01.jpg) no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+section#inicio h1{
+    font-size: 3.2rem;
+    margin-bottom: 12px;
+}
+section#inicio h3{
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+}
+section#inicio a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.1rem;
+    background-color: white;
+    padding: 20px 50px;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+section#inicio a:hover{
+    transition: 0.6s;
+    background-color: rgba(255, 255, 255, 0.671);
+}
+
+section#conheca-hotel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+    color: white;
+    text-align: center;
+}
+section#conheca-hotel h3{
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+}
+section#conheca-hotel p{
+    max-width: 800px;
+    margin-bottom: 30px;
+}
+section#conheca-hotel hr{
+    width: 400px;
+    height: 2px;
+    border-color: rgb(0, 0, 0);
+}
+ul.grid{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+ul.grid li{
+    list-style: none;
+    height: 350px;
+    padding: 20px;
+    border-radius: 4px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+}
+li.small{
+    flex: 1 1 40%;
+}
+li.large{
+    flex: 1 1 60%;
+}
+
 @media (max-width: 700px){
     header{flex-direction: column;}
     header img{margin-bottom: 10px;}
+    section#inicio h1{font-size: 2.5rem;}
+    section#inicio h3{font-size: 1.5rem;}
 }
