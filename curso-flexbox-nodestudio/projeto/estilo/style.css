@@ -9,6 +9,7 @@
 body{
     background-color: #9B8496;
     height: 100vh;
+    color: white;
 }
 header#cabecalho{
     background-color: #9B8496;
@@ -19,7 +20,6 @@ header#cabecalho{
 }
 header a{
     text-decoration: none;
-    color: white;
     cursor: pointer;
     padding: 10px;
 }
@@ -27,8 +27,8 @@ ul#itens{
     display: flex;
     list-style: none;
 }
-li{padding: 10px 0 10px 0;}
-li a:hover{
+ul#itensli{padding: 10px 0 10px 0;}
+ul#itens li a:hover{
     background-color: whitesmoke;
     transition: 0.6s;
     border-radius: 10px;
@@ -42,7 +42,6 @@ section#inicio{
     background: url(../img/praia01.jpg) no-repeat;
     background-size: cover;
     min-height: 100vh;
-    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,7 +75,6 @@ section#conheca-hotel{
     flex-direction: column;
     align-items: center;
     padding: 100px 50px;
-    color: white;
     text-align: center;
 }
 section#conheca-hotel h3{
@@ -113,9 +111,51 @@ li.large{
     flex: 1 1 60%;
 }
 
+section#carac{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 100px 50px;
+    background-color: #31472C;
+}
+section#carac h3{
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+}
+section#carac p{
+    max-width: 1200px;
+    margin-bottom: 30px;
+}
+section#carac hr{
+    width: 400px;
+    height: 2px;
+    border-color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+}
+section#carac ul.intro{
+    width: 100%;
+    display: flex;
+}
+section#carac ul.intro li{
+    padding: 0 30px;
+    text-align: center;
+    list-style: none;
+}
+section#carac span{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+section#carac h4{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+
 @media (max-width: 700px){
     header{flex-direction: column;}
     header img{margin-bottom: 10px;}
     section#inicio h1{font-size: 2.5rem;}
     section#inicio h3{font-size: 1.5rem;}
+    section#carac .intro { flex-direction: column;}
 }
