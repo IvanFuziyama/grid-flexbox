@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/* Itens individuais */
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background-color: #333;
+    border: 1px solid red;
+    padding: 15px;
+    display: grid;
+    text-align: center;
+    grid-template-columns: auto auto auto;
+}
+.container div{
+    background-color: #CCC;
+    padding: 20px;
+    border: 1px solid blue;
+}
+#item1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+#item2{
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+#item3{
+    justify-self: end;
+    height: 200px;
+}
+#item4{
+    align-self: center;
+}
+#item5{
+    justify-self: start;
+    height: 200px;
+}
+#item6{
+    align-self: end;
+}
