@@ -17,7 +17,7 @@ header#cabecalho{
     justify-content: space-between;
     align-items: center; 
     flex-wrap: wrap;
-    position: fixed;
+    position: fixed; /* position: sticky nao funcionou */
     width: 100%;
 }
 header a{
