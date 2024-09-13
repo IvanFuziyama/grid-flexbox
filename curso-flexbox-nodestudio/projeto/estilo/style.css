@@ -12,17 +12,21 @@ body{
     color: white;
 }
 header#cabecalho{
-    background-color: #9B8496;
+    background-color: rgb(31, 31, 31);
     display: flex;
     justify-content: space-between;
     align-items: center; 
     flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
 }
 header a{
     text-decoration: none;
     cursor: pointer;
     padding: 10px;
+    color: white;
 }
+
 ul#itens{
     display: flex;
     list-style: none;
@@ -151,11 +155,77 @@ section#carac h4{
     margin-bottom: 20px;
 }
 
+section#newsletter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+}
+section#newsletter h3{
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+}
+section#newsletter p{
+    max-width: 1200px;
+    margin-bottom: 30px;
+}
+section#newsletter hr{
+    width: 400px;
+    height: 2px;
+    border-color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+section#newsletter form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 800px;
+}
+section#newsletter input{
+    border-radius: 5px;
+    padding: 15px;
+    border: 1px solid rgb(104, 104, 104);
+}
+section#newsletter input.email{width: 300px;}
+section#newsletter input.cadastro{
+    cursor: pointer;
+    text-transform: uppercase;
+}
+section#newsletter input.cadastro:hover{
+    background-color: rgba(255, 255, 255, 0.541);
+    transition: 0.5s;
+}
 
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(31, 31, 31);
+    padding: 40px;
+    align-items: center;
+}
+footer ul{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+footer li{
+    list-style: none;
+    margin-right: 10px;
+}
+footer p{
+    text-align: center;
+}
 @media (max-width: 700px){
     header{flex-direction: column;}
+    header ul#itens{margin-bottom: 10px;}
     header img{margin-bottom: 10px;}
     section#inicio h1{font-size: 2.5rem;}
     section#inicio h3{font-size: 1.5rem;}
     section#carac .intro { flex-direction: column;}
+    section#newsletter input.email{
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
 }
